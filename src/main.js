@@ -1,4 +1,7 @@
 import { Fetch } from './fetch-lib.js';
+import { unusedFn } from './fetch-lib.js';
+
+unusedFn();
 
 const f = new Fetch();
 let gitHubFeed = [];
