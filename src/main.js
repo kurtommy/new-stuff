@@ -1,8 +1,6 @@
 import { Fetch } from './fetch-lib.js';
 import { unusedFn } from './fetch-lib.js';
 
-unusedFn();
-
 const f = new Fetch();
 let gitHubFeed = [];
 
@@ -21,7 +19,7 @@ let gitHubFeed = [];
   async function getFBGithubFeed() {
     let resp = await f.get('https://api.github.com/users/facebook/repos')
     console.info(resp.map(item => item.full_name));
-    console.info('the code here have to wait the await');
+    console.info('the code has have to wait the await');
   }
 
   getFBGithubFeed()
